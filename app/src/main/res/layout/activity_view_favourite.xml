@@ -4,46 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#18FFFF"
+    android:background="#8B62D80D"
     android:orientation="vertical"
-    tools:context=".rate">
+    tools:context=".viewFavourite">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+        android:orientation="horizontal"
         android:paddingLeft="20dp"
-        android:orientation="horizontal">
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textStyle="bold"
-            android:text="Carpark" />
+            android:text="Carpark"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textStyle="bold"
-            android:text="Total Price" />
+            android:text="Rate"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textStyle="bold"
-            android:text="Available Slots" />
+            android:text="Available Slots"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
     <ListView
-        android:id="@+id/lvRate"
+        android:id="@+id/lvFavourite"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
 </LinearLayout>

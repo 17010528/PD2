@@ -42,14 +42,15 @@ public class transactionhistory extends AppCompatActivity {
                 String carparkName = history.get(position).getName();
                 String carparkTotalPrice = history.get(position).getCost();
                 String carparkLot = history.get(position).getLot();
+                String number = "1";
 
-                String[] carpark = {carparkName , carparkTotalPrice , carparkLot};
+                String[] carpark = {carparkName , carparkTotalPrice , carparkLot, number};
 
                 Intent intent = new Intent(transactionhistory.this, map.class);
                 intent.putExtra("carpark", carpark);
-                map.btnBook.setVisibility(View.INVISIBLE);
-
+//               map.btnBook.setVisibility(View.INVISIBLE);
                 startActivity(intent);
+
             }
         });
     }

@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".faq"></activity>
+        <activity android:name=".viewFavourite"></activity>
+        <activity android:name=".addFavourite" />
+        <activity android:name=".faq" />
         <activity android:name=".transactionhistory" />
-        <activity android:name=".aboutus" />
         <activity android:name=".payment" />
         <activity android:name=".map" />
         <activity android:name=".rate" />

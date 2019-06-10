@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 public class map extends AppCompatActivity {
 
 public static Button btnBook;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,11 @@ public static Button btnBook;
         final String carparkName = carpark[0];
         final String carparkTotalPrice =  carpark[1];
         final String carparkLot = carpark[2];
+        final String number = carpark[3];
+
+        if(number.equalsIgnoreCase("1")) {
+            btnBook.setVisibility(View.GONE);
+        }
 
         if (carparkName.equalsIgnoreCase("p4")){
 

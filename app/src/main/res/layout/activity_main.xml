@@ -4,32 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B"
+    android:background="#FFB13B"
     android:orientation="vertical"
     tools:context=".mainactivity">
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/background_light">
-
-        <Button
-            android:id="@+id/buttonAbout"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_alignParentLeft="true"
-            android:background="@android:color/background_light"
-            android:text="About" />
-
-        <ImageButton
-            android:id="@+id/buttonHistory"
-            android:layout_width="80dp"
-            android:layout_height="74dp"
-            android:layout_alignParentRight="true"
-            android:background="@android:color/background_light"
-            app:srcCompat="@drawable/history" />
-
-    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -71,20 +48,35 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal" />
+
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150px">
 
-        <Button
-            android:id="@+id/buttonFind"
+    <Button
+        android:id="@+id/buttonFind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150px"
+        android:backgroundTint="#E59533"
+        android:text="Find"
+        android:textColor="@android:color/white" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Find" />
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
 
-    </RelativeLayout>
+
+    </ScrollView>
+
 
 </LinearLayout>
