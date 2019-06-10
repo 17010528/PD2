@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginTop="150px"
-        android:backgroundTint="#E59533"
+        android:backgroundTint="#33E5D6"
         android:text="Find"
         android:textColor="@android:color/white" />
 
@@ -73,6 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end|bottom"
             android:layout_margin="16dp"
+            app:backgroundTint="#6EFF4D"
             app:srcCompat="@drawable/ic_add_black_24dp" />
 
 
